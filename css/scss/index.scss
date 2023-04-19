@@ -6,6 +6,79 @@ body {
     font-family: "Noto Sans TC"
 
 }
+@keyframes shake1{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-10px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes pops1{
+    0%{
+        top:-65px;
+        opacity:100%
+    }
+    100%{
+        top:-165px;
+        opacity:0%
+    }
+}
+@keyframes pops2{
+    0%{
+        top:-86px;
+        opacity:100%
+    }
+    100%{
+        top:-186px;
+        opacity:0%
+    }
+}
+@keyframes hanabi{
+    0%{
+        transform: scale(1);
+        opacity:100%
+    }
+    100%{
+        transform: scale(1.5);
+        opacity:0%
+    }
+}
+@keyframes slide{
+    0%{
+        background-position: 1600px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+
+a.btn1 {
+    width: 200px;
+    height: 57px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B57556;
+    text-decoration: none;
+
+    h6 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 125%;
+        letter-spacing: 0.3em;
+        color: #FFFFFF;
+
+    }
+}
 
 h1 {
     font-size: 32px;
@@ -23,10 +96,12 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #204379;
         background-image: url(../img/bg1.png);
         background-size: cover;
         height: 634px;
         width: 100%;
+
         .title {
             text-align: center;
             margin-top: 60px;
@@ -45,7 +120,7 @@ h2 {
             }
         }
 
-        a {
+        a.btn1 {
             margin-top: 32px;
             margin-bottom: 32px;
             width: 200px;
@@ -91,19 +166,21 @@ h2 {
             img.wood {
                 top: -24px;
                 right: 16px;
-                animation: shake1 2s infinite;
+                animation: shake1 2s ease-in-out infinite;
             }
 
             img.pop1 {
                 top: -65px;
                 right: 45px;
                 width: 20px;
+                animation: pops1 5s ease-in-out infinite;
             }
 
             img.pop2 {
                 top: -86px;
                 right: 25px;
                 width: 12px;
+                animation: pops2 5s ease-in-out infinite;
             }
 
             img.boat2 {
@@ -114,6 +191,7 @@ h2 {
             img.fireworks {
                 bottom: -55px;
                 left: 10px;
+                animation: hanabi 5s ease-in-out infinite;
             }
 
             div {
@@ -148,13 +226,157 @@ h2 {
                 margin-top: 24px;
             }
         }
-        .wave {
-            background-image: url(../IMG/wave.png);
-            background-size: cover;
-            background-repeat: repeat;
-            animation: slide 10s linear infinite;
-            height: 110px;
-            width: 100%;
+
+    }
+
+    .wave {
+        background-image: url(../img/wave.png);
+
+        background-repeat: repeat;
+        animation: slide 10s linear infinite;
+        height: 110px;
+        width: 100%;
+    }
+
+    .mid {
+
+        background-color: #e2d9d3;
+
+        .st {
+            height: 813px;
+            padding: 40px 24px;
+            box-sizing: border-box;
+
+            .form {
+                width: 808px;
+                height: 575px;
+                border-radius: 16px;
+                border: 2px solid #B57556;
+                margin: 0 auto;
+                margin-top: 41px;
+                margin-bottom: 40px;
+                padding: 40px 20px;
+                box-sizing: border-box;
+                background-color: #FFFFFF;
+                position: relative;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+
+                    span {
+                        margin-bottom: 4px;
+                        font-family: 'Noto Sans TC';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        color: #204379;
+                    }
+
+                    span::after {
+                        content: "*";
+                        color: red;
+                    }
+
+                    input {
+                        padding: 16.5px 16px;
+                        border-radius: 20px;
+                        font-family: 'Noto Sans TC';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        box-sizing: border-box;
+                        border: 1px solid #204379;
+                        color: #BDBDBD;
+
+
+                    }
+
+                    input:hover {
+                        border: 1px solid #204379;
+                    }
+                }
+
+                div.title {
+                    display: block;
+                    margin: 0;
+                    position: absolute;
+                    left: 322px;
+
+                    top: -22.5px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #B57556;
+                    background-color: #FFFFFF;
+                    border-radius: 50px;
+                    border: 2px solid #B57556;
+                    padding: 10px 20px;
+                    line-height: 125%;
+                    letter-spacing: 0.3em;
+                    text-align: center;
+
+                }
+
+                img {
+                    position: absolute;
+                    left: 412px;
+
+                    top: -31px;
+                }
+            }
+
+            a.btn1 {
+                margin: 0 auto;
+
+            }
+
+        }
+
+        .nd {
+            height: 531px;
+            background-image: url(../img/bg2.png);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .container {
+                width: 598px;
+                height: 451px;
+                box-sizing: border-box;
+
+                .row {
+                    width: 100%;
+                    height: 145px;
+                    margin-top: 8px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .item {
+                        width: 178px;
+                        height: 145px;
+                        margin-top: 24px;
+                        border-radius: 20px;
+                        background-color: #FFFFFF;
+                    }
+                }
+
+                .row.row1 {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .rd {
+            height: 378px;
+        }
+
+        .th {
+            height: 677px;
+            background-color: #204379;
+            border-radius: 50px 50px 0 0;
         }
     }
 
