@@ -1,0 +1,162 @@
+@import url(./reset.css);
+
+body {
+    width: 100%;
+    padding: 0;
+    font-family: "Noto Sans TC"
+
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    .top_banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/bg1.png);
+        background-size: cover;
+        height: 634px;
+        width: 100%;
+        .title {
+            text-align: center;
+            margin-top: 60px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 700;
+            color: #FFFFFF;
+            letter-spacing: 0.2em;
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+
+        a {
+            margin-top: 32px;
+            margin-bottom: 32px;
+            width: 200px;
+            height: 57px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #B57556;
+            text-decoration: none;
+
+            h6 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 125%;
+                letter-spacing: 0.3em;
+                color: #FFFFFF;
+
+            }
+        }
+
+        .text {
+            background-color: #DAE4F1;
+            width: 808px;
+            height: 322px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding: 24px 16px;
+            color: #204379;
+            border: 2px solid #B57556;
+            position: relative;
+
+            img.decor {
+                position: absolute;
+            }
+
+            img.boat1 {
+                right: 16px;
+                top: -35px;
+            }
+
+            img.wood {
+                top: -24px;
+                right: 16px;
+                animation: shake1 2s infinite;
+            }
+
+            img.pop1 {
+                top: -65px;
+                right: 45px;
+                width: 20px;
+            }
+
+            img.pop2 {
+                top: -86px;
+                right: 25px;
+                width: 12px;
+            }
+
+            img.boat2 {
+                top: 295px;
+                left: 35px;
+            }
+
+            img.fireworks {
+                bottom: -55px;
+                left: 10px;
+            }
+
+            div {
+                .text_title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 16px;
+                    height: 40px;
+
+                    h5 {
+                        font-size: 22.5px;
+                        text-align: center;
+                        font-weight: 700;
+                        margin-left: 3px;
+                        margin-right: 3px;
+
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 180%;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            div.second {
+                margin-top: 24px;
+            }
+        }
+        .wave {
+            background-image: url(../IMG/wave.png);
+            background-size: cover;
+            background-repeat: repeat;
+            animation: slide 10s linear infinite;
+            height: 110px;
+            width: 100%;
+        }
+    }
+
+
+}
